@@ -35,14 +35,14 @@ const Index = () => {
     getData();
   }, [params]);
 
-  const handleChange = (event, value) => {
+  const handleChange = (event:any, value:any) => {
     setParams({
       ...params,
       page: value,
     });
   };
 
-  const deleteItem = async (client_id, owner_id) => {
+  const deleteItem = async (client_id:any, owner_id:any) => {
     const params = { client_id, owner_id };
 
     try {
